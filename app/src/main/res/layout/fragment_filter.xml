@@ -1,0 +1,108 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="filters"
+            type="com.example.project2.model.SearchFilters"/>
+    </data>
+
+    <FrameLayout
+        tools:context="com.example.week2.fragment.SearchFiltersFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:padding="5dp"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tvBeginDate"
+                style="@style/HighlightText"
+                android:text="@string/begin_date" />
+
+            <EditText
+                android:id="@+id/etBeginDate"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/begin_date_hint"
+                android:padding="8dp"
+                 />
+
+            <TextView
+                android:id="@+id/tvDisableBeginDate"
+                style="@style/HighlightText"
+
+                android:text="@string/news_desk" />
+
+            <CheckBox
+                android:id="@+id/cbNoBeginDate"
+                android:layout_width="150dp"
+                android:layout_height="33dp"
+                android:checked="@{filters.ignoreBeginDate}"
+                android:text="@string/ignore_begin_date"
+                tools:layout_editor_absoluteX="53dp"
+                tools:layout_editor_absoluteY="266dp" />
+
+            <TextView
+                android:id="@+id/tvNewsDesk"
+                style="@style/HighlightText"
+                android:text="@string/type" />
+
+            <CheckBox
+                android:id="@+id/cbArts"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:checked="@{filters.arts}"
+                android:text="@string/arts" />
+
+            <CheckBox
+                android:id="@+id/cbFashion"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:checked="@{filters.fashion}"
+                android:text="@string/fashion" />
+
+            <CheckBox
+                android:id="@+id/cbStyle"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:checked="@{filters.style}"
+
+                android:text="@string/style" />
+
+            <CheckBox
+                android:id="@+id/cbSport"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:checked="@{filters.sport}"
+
+                android:text="@string/sport" />
+
+
+            <TextView
+                android:id="@+id/tvSort"
+                style="@style/HighlightText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sort_order" />
+
+            <Spinner
+                android:id="@+id/spSort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/sort_order" />
+
+            <Button
+                android:id="@+id/btSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@color/highlight"
+                android:text="@string/save"
+                android:textColor="@android:color/white"
+                />
+        </LinearLayout>
+    </FrameLayout>
+</layout>

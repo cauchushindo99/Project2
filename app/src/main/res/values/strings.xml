@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">Project2</string>
+    <string name="app_name">week2</string>
+    <string name="search">Search</string>
+    <string name="filter">Filter</string>
+    <string name="begin_date_hint">MM/DD/YY</string>
+    <string name="type">Type</string>
+    <string name="ignore_begin_date">Ignore begin date</string>
+    <string name="news_desk">News Desk</string>
+    <string name="begin_date">Begin date:</string>
+    <string name="search_hint">Search NY Times ...</string>
+    <string name="fashion">Fashion</string>
+    <string name="arts">Arts</string>
+    <string name="style">Style</string>
+    <string name="sport">Sport</string>
+    <string name="sort_order">sort_order</string>
+    <string name="save">save</string>
+
+
+    <string-array name="sort_order">
+        <item>Oldest</item>
+        <item>Newest</item>
+    </string-array>
 </resources>
