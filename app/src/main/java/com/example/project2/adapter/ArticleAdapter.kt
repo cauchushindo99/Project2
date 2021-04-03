@@ -56,6 +56,6 @@ class ArticleAdapter(var mContext: Context, var mList: List<Doc>?, var onClickIt
             .load(thumbnailUrl)
             .into(holder.imgThumbnail)
     }
-    }
+
 
 }
